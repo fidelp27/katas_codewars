@@ -17,3 +17,20 @@ function isIsogram(str){
   if(array.length === unique.length) return true
   return false
 }
+
+//solucion 2
+function isIsogram2(str){
+  let array = str.toLowerCase().split("");
+  for(let i= 0; i < array.length; i++){
+    for(let j=0; j < array.length; j++){
+      if(i !== j && array[i] === array[j]){
+        console.log("hay concidencia")
+        return false
+      }
+    }
+  }
+  console.log("No hay coincidencias")
+  return true
+  
+}
+isIsogram2("loveo")
