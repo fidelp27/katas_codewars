@@ -17,6 +17,7 @@ const busquedaBinaria = (list, target) => {
   let right = list.length - 1;
   while (left <= right) {
     let middle = Math.floor((left + right) / 2);
+    console.log("middle " + middle)
     if (list[middle] === target) {
       console.timeEnd("Tiempo de Búsqueda Binaria");
       return middle;
@@ -25,6 +26,7 @@ const busquedaBinaria = (list, target) => {
     } else {
       right = middle - 1;
     }
+    console.log("left " + left + " rigth " + right)
   }
   console.timeEnd("Tiempo de Búsqueda Binaria");
   console.log("No se encontró " + target);
