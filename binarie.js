@@ -12,5 +12,5 @@ const getBinary2=(number)=>{
   }
   console.log(binario.reverse().join(""))
 }
-getBinary(1580)
-getBinary2(1580)
+//getBinary(2)
+getBinary2(2)
