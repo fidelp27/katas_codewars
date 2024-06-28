@@ -10,3 +10,10 @@ Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 String.prototype.toJadenCase = function () {
   return this.split(" ").map((elem)=> elem.charAt(0).toUpperCase() + elem.slice(1).toLowerCase()).join(" ")
 };
+
+let fibo=(a,b,q)=>{
+  let arr = [a,b]
+  for(let i = 0; i<q; i++){
+    arr.push(arr[i] + arr[i+1])
+  }
+}
