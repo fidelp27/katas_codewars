@@ -11,7 +11,6 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 */
 
 function longest(s1, s2) {
-
   let uniques = new Set([...s1, ...s2])
   return [...uniques].sort((a,b)=> a.localeCompare(b)).join("")
 }
