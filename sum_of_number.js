@@ -13,7 +13,6 @@ Examples (a, b) --> output (explanation)
 Your function should only return a number, not the explanation about how you get that number.
 */
 
-const { get } = require("http");
 
 //forma 1
 function getSum(a, b){
